@@ -7,7 +7,7 @@ func TestWordCount(t *testing.T) {
 		in string
 		want int
 	}{
-		{"Hello, world", 3},
+		{"Hello, world", 2},
 	}
 	for _, c := range cases {
 		got := WordCount(c.in)
