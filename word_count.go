@@ -7,6 +7,7 @@ import (
 	"strings"
 )
 
+// WordCount counts words in a string
 func WordCount(s string) int {
 	return len(strings.Fields(s))
 }

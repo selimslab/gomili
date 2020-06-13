@@ -1,2 +1,2 @@
-// useful functions to work with strings 
+// Useful functions to work with strings
 package gondor

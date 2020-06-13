@@ -1,4 +1,4 @@
-# gondor :rocket: 
+# gondor :european_castle: 
 
 useful functions to work with strings 
 
