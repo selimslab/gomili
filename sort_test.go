@@ -5,7 +5,7 @@ import (
 	"reflect"
 )
 
-func TestReverseRunes(t *testing.T) {
+func TestByLength(t *testing.T) {
 	cases := []struct {
 		in, want []string
 	}{
