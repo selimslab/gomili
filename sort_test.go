@@ -1,15 +1,15 @@
 package gondor
 
 import (
-	"testing"
 	"reflect"
+	"testing"
 )
 
 func TestByLength(t *testing.T) {
 	cases := []struct {
 		in, want []string
 	}{
-		{[]string{"peach", "banana", "kiwi"}, []string{ "kiwi", "peach", "banana"}},
+		{[]string{"peach", "banana", "kiwi"}, []string{"kiwi", "peach", "banana"}},
 	}
 	for _, c := range cases {
 		got := ByLength(c.in)
@@ -19,4 +19,3 @@ func TestByLength(t *testing.T) {
 		}
 	}
 }
-

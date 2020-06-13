@@ -13,14 +13,14 @@ func WordCount(s string) int {
 
 func bufferCount() {
 	var chars, words, lines int
-	r := bufio.NewReader(os.Stdin) 
+	r := bufio.NewReader(os.Stdin)
 	fmt.Printf("hi")
 	for {
-		switch s, ok := r.ReadString('\n'); true { 
-		case ok != nil: 
+		switch s, ok := r.ReadString('\n'); true {
+		case ok != nil:
 			fmt.Printf("%d %d %d\n", chars, words, lines)
 			return
-		default: 
+		default:
 			chars += len(s)
 			words += len(strings.Fields(s))
 			lines++

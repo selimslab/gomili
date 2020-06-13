@@ -4,7 +4,7 @@ import "testing"
 
 func TestWordCount(t *testing.T) {
 	cases := []struct {
-		in string
+		in   string
 		want int
 	}{
 		{"Hello, world", 2},

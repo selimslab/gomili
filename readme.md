@@ -1,1 +1,1 @@
-useful util functions 
+useful functions to work with strings 

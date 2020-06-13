@@ -16,7 +16,7 @@ func (s byLength) Less(i, j int) bool {
 	return len(s[i]) < len(s[j])
 }
 
-func ByLength(s []string) []string{
+func ByLength(s []string) []string {
 	sort.Sort(byLength(s))
 	return s
 }
