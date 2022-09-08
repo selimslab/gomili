@@ -1,2 +1,2 @@
 // Useful functions to work with strings
-package gondor
+package gosh

@@ -1,4 +1,4 @@
-package gondor
+package gosh
 
 import (
 	"sort"

@@ -1,15 +1,12 @@
-# gondor :european_castle: 
+# gosh
 
-useful functions to work with strings 
+[![Build Status](https://github.com/selimslab/gosh/workflows/build/badge.svg?branch=master)](https://github.com/selimslab/gosh/actions)
 
+[![godoc](https://godoc.org/github.com/selimslab/gosh?status.svg)](https://godoc.org/github.com/selimslab/gosh)
 
-[![Build Status](https://github.com/selimslab/gondor/workflows/build/badge.svg?branch=master)](https://github.com/selimslab/gondor/actions)
-
-[![godoc](https://godoc.org/github.com/selimslab/gondor?status.svg)](https://godoc.org/github.com/selimslab/gondor)
-
-[![Go Report Card](https://goreportcard.com/badge/github.com/selimslab/gondor)](https://goreportcard.com/report/github.com/selimslab/gondor)
+[![Go Report Card](https://goreportcard.com/badge/github.com/selimslab/gosh)](https://goreportcard.com/report/github.com/selimslab/gosh)
 
 
-[![Codecov](https://img.shields.io/codecov/c/github/selimslab/gondor)](https://codecov.io/gh/selimslab/gondor)
+[![Codecov](https://img.shields.io/codecov/c/github/selimslab/gosh)](https://codecov.io/gh/selimslab/gosh)
 
-[![MIT License](https://img.shields.io/github/license/selimslab/gondor)](https://github.com/selimslab/gondor/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/github/license/selimslab/gosh)](https://github.com/selimslab/gosh/blob/master/LICENSE)
