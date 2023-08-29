@@ -1,0 +1,13 @@
+{
+  "task.allowAutomaticTasks": "off",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "extensions.ignoreRecommendations": true,
+  "macros": {
+    "downAndOpen": ["list.focusDown", "list.selectAndPreserveFocus"],
+    "upAndOpen": ["list.focusUp", "list.selectAndPreserveFocus"]
+  }
+}

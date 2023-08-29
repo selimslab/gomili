@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kline Viewer</title>
+    <script>
+        var searchParams = new URLSearchParams(window.location.search);
+        var pair = searchParams.get("pair") || "BTCUSDT"; // Default to BTCUSDT if no pair is provided
+
+        var ws = new WebSocket("ws://localhost:8080/ws");
+        
+        ws.onmessage = function(event) {
+            var update = event.data;
+            var klineDataElement = document.getElementById("kline-data");
+            klineDataElement.textContent = update;
+        };
+    </script>
+</head>
+<body>
+    <h1>Kline Viewer</h1>
+    <div id="kline-data"></div>
+</body>
+</html>

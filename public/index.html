@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .clock {
+            width: 200px;
+            height: 200px;
+            border: 10px solid #333;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .hour, .minute, .second {
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            background: #333;
+            top: 50%;
+            transform-origin: 100%;
+            transform: translate(0%, -50%);
+        }
+
+        .hour {
+            transform: translate(-100%, -50%) rotate(30deg);
+            background: #333;
+        }
+
+        .minute {
+            transform: translate(-100%, -50%) rotate(120deg);
+            background: #666;
+        }
+
+        .second {
+            width: 50%;
+            height: 2px;
+            background: #ff0000;
+            top: 50%;
+            transform-origin: 100%;
+            transform: translate(0%, -50%) rotate(185deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="hour"></div>
+        <div class="minute"></div>
+        <div class="second"></div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours() % 12;
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+
+            const hourDeg = (360 / 12) * hours + (360 / 12) * (minutes / 60);
+            const minuteDeg = (360 / 60) * minutes + (360 / 60) * (seconds / 60);
+            const secondDeg = (360 / 60) * seconds;
+
+            document.querySelector('.hour').style.transform = `translate(-100%, -50%) rotate(${hourDeg}deg)`;
+            document.querySelector('.minute').style.transform = `translate(-100%, -50%) rotate(${minuteDeg}deg)`;
+            document.querySelector('.second').style.transform = `translate(-100%, -50%) rotate(${secondDeg}deg)`;
+        }
+
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+</html>
