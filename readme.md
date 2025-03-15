@@ -7,5 +7,3 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/selimslab/gomili)](https://goreportcard.com/report/github.com/selimslab/gomili)
 
 [![Codecov](https://img.shields.io/codecov/c/github/selimslab/gomili)](https://codecov.io/gh/selimslab/gomili)
-
-[![MIT License](https://img.shields.io/github/license/selimslab/gomili)](https://github.com/selimslab/gomili/blob/master/LICENSE)
