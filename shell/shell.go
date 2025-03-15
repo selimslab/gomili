@@ -1,4 +1,4 @@
-package gosh
+package shell
 
 import (
 	"bufio"

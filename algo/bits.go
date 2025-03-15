@@ -1,3 +1,5 @@
+package algo
+
 func reverseBits(num uint32) uint32 {
     /*
     Input: 00000010100101000001111010011100
